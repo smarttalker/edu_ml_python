@@ -3,7 +3,7 @@ import unittest
 from src.topic1.lesson3.functions import function_task1, function_task2
 
 
-class MyTestCase(unittest.TestCase):
+class StTestCase(unittest.TestCase):
 
     def test_function_task1(self):
         self.assertTrue(type(function_task1()) == list)

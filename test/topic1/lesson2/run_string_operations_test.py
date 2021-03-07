@@ -2,7 +2,7 @@ import unittest
 from src.topic1.lesson2.string_operations import string_operations_task1, string_operations_task2, string_operations_task3
 
 
-class MyTestCase(unittest.TestCase):
+class StTestCase(unittest.TestCase):
 
     def test_string_operations_task1(self):
         self.assertTrue(string_operations_task1().__len__(), 18)

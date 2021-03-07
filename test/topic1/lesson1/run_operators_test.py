@@ -3,7 +3,7 @@ import unittest
 from src.topic1.lesson1.operators import operators_task1, operators_task2, operators_task3
 
 
-class MyTestCase(unittest.TestCase):
+class StTestCase(unittest.TestCase):
 
     def test_operators_task1(self):
         self.assertTrue(operators_task1() == 10)

@@ -2,7 +2,7 @@ import unittest
 from src.topic1.lesson3.loops import loops_task1
 
 
-class MyTestCase(unittest.TestCase):
+class StTestCase(unittest.TestCase):
 
     def test_loops_task1(self):
         self.assertTrue(loops_task1().__len__(), 500)
