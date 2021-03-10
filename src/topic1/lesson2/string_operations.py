@@ -27,7 +27,7 @@ def string_operations_task1():
     """
     quote = "I am the wisest man alive, for I know one thing, and that is that I know nothing."
     # TODO write the code
-    return quote
+    return quote.split(" ")
 
 
 def string_operations_task2():
@@ -36,13 +36,13 @@ def string_operations_task2():
     """
     word = "wisest"
     # TODO write the code
-    return word
+    return word.upper()
 
 
 def string_operations_task3():
     """
     Reverse tne string
     """
-    word = "wisest"
+    word = "wisest"[::-1]
     # TODO write the code
     return word
