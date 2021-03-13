@@ -46,8 +46,8 @@ def class_task1():
     Create the class for describing a 'car'
     """
     class Car:
-        name = ""
-        color = ""
+        name = "Tesla"
+        color = "white"
         # TODO write the code
 
     return Car()
