@@ -38,4 +38,10 @@ def dictionary_task1():
     """
     my_dictionary = {}
     # TODO write the code
+    my_dictionary["Alex"] = +380972121211
+    my_dictionary["Igor"] = +380972121222
+    my_dictionary["Ilon"] = +380972121233
+    my_dictionary["Nikola"] = +380972121244
+    my_dictionary.update({"Max": +38097212199})
+    my_dictionary.pop("Alex")
     return my_dictionary
