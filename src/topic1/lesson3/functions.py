@@ -30,7 +30,8 @@ def function_task1():
     Modify this function to return a list of strings
     """
     # TODO write the code
-    return list()
+
+    return list([1, 2, 3, 4, 5, 6])
 
 
 def function_task2(list1, list2):
@@ -38,4 +39,5 @@ def function_task2(list1, list2):
     Modify this function to return concatenated lists
     """
     # TODO write the code
-    return None
+    ##[1, 2, 3], [1, 2, 3]
+    return list1 + list2
