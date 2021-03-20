@@ -1,5 +1,5 @@
 if __name__ == '__main__':
-    print("lesson 2")
+    print("operators")
     """
     Arithmetic Operators, Assignment Operators, Comparison Operators, 
     """

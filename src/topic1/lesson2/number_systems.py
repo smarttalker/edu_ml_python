@@ -1,5 +1,5 @@
 if __name__ == '__main__':
-    print("test")
+    print("number systems")
 
     """
     Number systems - Binary, Octal, and Hexadecimal Integers in Python  
@@ -12,8 +12,18 @@ if __name__ == '__main__':
 
     HOWTO:
     Representation number - '5' in decimal system, in the binary - '101'
-    Convert binary '101' to the decimal - (1 * (2^2)) + (0 * (2^1)) + (1 * (2^0)) = 5 
+    Convert binary '101' to the decimal - (1 * (2^2)) + (0 * (2^1)) + (1 * (2^0)) = 5
+    
+    1    0   1
+    -----------
+    2^2 2^1 2^0
+    ============
+     4   2   1
+    +++++++++++ 
+     4 + 0 + 1
     '''
+    print(int("101101"))
+
     binary_number_string = "101"
     print("Binary - %s, to decimal = %d " % (binary_number_string, int(binary_number_string, base=2)))
 
