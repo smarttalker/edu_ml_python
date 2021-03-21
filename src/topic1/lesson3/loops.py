@@ -29,7 +29,8 @@ if __name__ == '__main__':
 
     # "break" and "continue" statements
     '''
-    break is used to exit a for loop or a while loop,
+    break is used to exit a for loop or a while loop        result.append(i)
+,
     Whereas continue is used to skip the current block, and return to the "for" or "while" statement.
     '''
     count = 0
@@ -51,17 +52,11 @@ def loops_task1():
     """
     Use loop for creation list with 500 integer elements
     """
-<<<<<<< HEAD
-    task_list = []
-    count = 0
-    while (count < 500):
-        task_list.append(count)
-        count += 1
-=======
->>>>>>> 81a2c0d7224cb85429510509cd77c9724d96daf9
-    # TODO write the code
-    result = None
+    result = []
+    for i in range(500):
+        result.append(i)
     return result
+
 
 
 def loops_task2():
@@ -70,5 +65,9 @@ def loops_task2():
     Use loop for creation new list with even elements [2,4,6,8,10]
     """
     # TODO write the code
-    result = None
+    print("looooop")
+    result = []
+    for i in task2:
+        if i%2 == 0:
+            result.append(i)
     return result
