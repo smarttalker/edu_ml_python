@@ -41,7 +41,12 @@ if __name__ == '__main__':
           [1, 6, 7, 4]]
     # TODO print diagonal in oposite order  4, 3, 2, 1
     print(M3)
-    final_str = ""
+    final_str = "Спава сверху налево вниз\n"
     for i in range(len(M3)):
         final_str += "Элемент " + str(i) + ": " + str(M3[i][len(M3)-i-1]) + "\n"
+    print(final_str)
+
+    final_str = "Справа снизу налево вверх\n"
+    for i in range(len(M3)):
+        final_str += "Элемент: " + str(M3[len(M3)-i-1][len(M3)-i-1]) + "\n"
     print(final_str)
