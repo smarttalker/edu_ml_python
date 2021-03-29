@@ -1,3 +1,15 @@
+создал новый бранч
+ввел git pull, выдало  что у ветки нет отслеживаний
+git pull https://github.com/imaxfp/edu_ml_python master выдало конфликт слияния
+
+git add -A
+git commit "make branch 29032021"
+fatal: нельзя создать частичный коммит во время слияния.
+
+
+
+
+
 
 
 Перейти на вкладку Pull Requests
