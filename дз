@@ -6,6 +6,14 @@ git add -A
 git commit "make branch 29032021"
 fatal: нельзя создать частичный коммит во время слияния.
 
+git status показал новые файлы
+git commit -m "make branch 29032021" увидел ошибку в команде
+
+не показал изменений в файлах matrix и functions
+
+
+
+
 
 
 
