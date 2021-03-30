@@ -51,8 +51,8 @@ if __name__ == '__main__':
     print(res_zip)
 
     # TODO
-    filter()
-    reduce()
+    #filter()
+    #reduce()
 
 
 def function_task1():
