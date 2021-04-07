@@ -15,7 +15,9 @@ git commit -m "make branch 29032021" увидел ошибку в команде
 
 
 
-
+git add -A
+git commit -m "задание по матрице matrix.py (исправлено)"
+git push -u origin lesson2
 
 
 
