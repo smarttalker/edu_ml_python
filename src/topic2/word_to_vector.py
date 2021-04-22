@@ -22,6 +22,8 @@ Word Embeddings (CBO)
 sentence1 = "Socrates likes to watch movies. Mary likes movies too."
 sentence2 = "Rene Descartes likes to watch movies. Mary likes movies too."
 sentence3 = "Kant also likes to watch football games"
+sentence4 = "also one more movie"
+sentence5 = "sdfvsd dghfg ghjkmhghuk, sdf"
 
 
 def collect_all_unique_words(list_of_sentences):
@@ -48,6 +50,7 @@ def to_lowercase_and_remove_stop_words(list_of_sentences):
     tt = str.maketrans(dict.fromkeys(string.punctuation))   #список знаков препинания
     result_list = []
     for sentence in list_of_sentences:
+        #todo please split next strings to two with higher defs (HOF)
         result_list.append(list(filter(lambda x: not x in stopwords, sentence.lower().translate(tt).split())))
     return result_list
 
@@ -84,9 +87,9 @@ if __name__ == '__main__':
     we need to deal with linguistic entities such as words?
     How can we model them as mathematical representations? The answer is we convert them to vectors!
     '''
-    list_unique_words = collect_all_unique_words([sentence1, sentence2, sentence3])
+    list_unique_words = collect_all_unique_words([sentence1, sentence2, sentence3, sentence4, sentence5])
   #  print("Список уникальных слов:\n", ", ".join(list_unique_words))
-    create_matrix([sentence1, sentence2, sentence3], list_unique_words)
+    create_matrix([sentence1, sentence2, sentence3, sentence4, sentence5], list_unique_words)
 
     # TODO 3 create the matrix where count of COLUMNS is unique words and ROWS count of sentences
 

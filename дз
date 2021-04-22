@@ -10,7 +10,7 @@ git status показал новые файлы
 git commit -m "make branch 29032021" увидел ошибку в команде
 
 не показал изменений в файлах matrix и functions
-
+git pull request
 
 
 
