@@ -13,7 +13,10 @@ similarity and simple linear algebra
 
 @see https://www.baeldung.com/cs/convert-word-to-vector
 """
-
+# Do not change the sentences
+sentence1 = "Socrates likes to watch movies. Mary likes movies too."
+sentence2 = "Rene Descartes likes to watch movies. Mary likes movies too."
+sentence3 = "Kant also likes to watch football games"
 
 def collect_all_unique_words(list_of_words):
     """
@@ -38,7 +41,7 @@ def st_collect_all_unique_words(list_of_sentences):
     """
     # TODO 1 use HOF 'map, filter, etc'
     collect_words = []
-    list_of_sentences = to_lowercase_and_remove_stop_words(list_of_sentences)
+    list_of_sentences = st_to_lowercase_and_remove_stop_words(list_of_sentences)
     for sentence in  list_of_sentences:
         for tmp_word in sentence:
             if not tmp_word in collect_words:
@@ -69,7 +72,7 @@ def st_to_lowercase_and_remove_stop_words(list_of_sentences):
         result_list.append(list(filter(lambda x: not x in stopwords, sentence.lower().translate(tt).split())))
     return result_list
 
-def create_matrix(list_of_sentences, list_unique_words): #изменил параметр
+def st_create_matrix(list_of_sentences, list_unique_words): #изменил параметр
     """
     type of the matrix will be 'int'
     Title of the matrix == our unique words
@@ -138,9 +141,9 @@ if __name__ == '__main__':
     we need to deal with linguistic entities such as words?
     How can we model them as mathematical representations? The answer is we convert them to vectors!
     '''
-    list_unique_words = collect_all_unique_words([sentence1, sentence2, sentence3])
-  #  print("Список уникальных слов:\n", ", ".join(list_unique_words))
-    create_matrix([sentence1, sentence2, sentence3], list_unique_words)
+    list_unique_words = st_collect_all_unique_words([sentence1, sentence2, sentence3])
+    print("Список уникальных слов:\n", ", ".join(list_unique_words))
+    st_create_matrix([sentence1, sentence2, sentence3], list_unique_words)
 
     # TODO 3 create the matrix where count of COLUMNS is unique words and ROWS count of sentences
 
@@ -149,7 +152,7 @@ if __name__ == '__main__':
 
 
 
-list_for_matrix = ["Socrates Socrates likes to watch movies. Mary likes movies too.",
+    list_for_matrix = ["Socrates Socrates likes to watch movies. Mary likes movies too.",
                        "Rene Descartes likes to watch movies. Mary likes movies too.",
                        "Kant, also likes to watch football games",
                        "Test",
