@@ -39,17 +39,29 @@ if __name__ == '__main__':
     res = list(map(str.upper, my_pets))
     print(res)
 
-    # 2
+    # map with lambda example
     list_number = [1, 2, 3, 4]
     res = map(lambda x: x ** 2, list_number)
     print(list(res))
 
-    # 3
+    # zip example
     list_number = [1, 2, 3, 4]
     list_words = ["one", "qwer", "ett", "rttr"]
     res_zip = list(zip(list_number, list_words))
     print(res_zip)
 
+    # filter example
+
+    my_list = [12, 65, 54, 39, 102, 339, 221, 50, 70, 100]
+    my_list_str = ["geeks", "geeg", "keegs", "practice", "to", "hi", "apple", "amazon"]
+    print("filter 1", list(filter(lambda x: x[0] == 'a', my_list_str)))
+    print("filter 2", list(filter(lambda x: x % 2 == 0, my_list)))
+
+    # reduce example
+    list_reduce = [1, 2, 3, 4]
+
+    # reduce example
+    print("Reduce implementation", reduce(lambda x, y: x + y, list_reduce))
     # TODO
     #filter()
     #reduce()
